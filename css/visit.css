@@ -1,0 +1,32 @@
+main {
+    background-image: url(../images/mavis-cw-164128.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.text_visit {
+    max-width: 400px;
+    padding: 75px;
+    background-color:#EDF1F4;
+    border-radius: 15px;
+}
+
+button {
+    font-size: 20px;
+    background: black;
+    border-radius: 10px;
+    color: white;
+    padding: 25px 100px;
+    text-transform: uppercase;
+    border-style: none;
+}

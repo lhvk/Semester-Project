@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+* { font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+
+body {
+    background-color: #e6e6e6;
+    width: auto;
+    margin: 0px;
+}
+
+/* Home Page */
+
+.visit_link {
+    background-image: url(../images/exhibition-1863344_1920.jpg);
+    height: 999px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Museum Info Page */
+
+.explore_text {
+   display: flex;
+   align-items: baseline;
+   justify-content: center;
+}
+
+.explore_text img {
+    height: 382px;
+}
+
+.explore_text h1 {
+    max-width: 255px;
+}
+
+.text {
+    line-height: 1.5;
+    padding: 100px;
+}
+
+/* Exhibitions Page */
+
+.exhibitions_link {
+    background-image: url(../images/jesse-orrico-60373.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1271.69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* News Page */
+
+.news {
+    margin: 100px 200px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.headings {
+    line-height: 0.5;
+}
+
+.paragraph_wrapper {
+    display: flex;
+    line-height: 1.5;
+    flex-wrap: wrap;
+}
+/*
+.paragraph_wrapper div {
+    padding: 0px 100px;
+} */
+
+/* Explore Background With Direct Link */
+
+.explore_link {
+    background-image: url(../images/andrew-ruiz-348421.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1277px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual_font {
+    font-size: 25px;
+    text-decoration: overline;
+    text-transform: initial;
+}
+
+/* Buttons */
+
+.small_btn {
+    background-color: #C3C3C3;
+    color: black;
+    text-align: center;
+    border: none;
+    padding: 10px 22px;
+    font-weight: bold;
+}
+
+.medium_btn {
+    font-size: 20px;
+    background: black;
+    border-radius: 10px;
+    color: white;
+    padding: 25px 100px;
+    text-transform: uppercase;
+}
+
+.button {
+    border-style: solid;
+    border-color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 400px;
+	padding: 20px;
+	border-radius: 50px;
+    transition:all 0.4s ease-in-out;
+  }
+
+  .button1:hover {
+      background:#15110E;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
+  }
+
+  .button2:hover {
+    background:#4F4D6D;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
+}
+
+.button3:hover {
+    background:#AC8634;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Text */
+
+h1, h2, h3 {
+    color: black;
+}
+
+p {
+    color: #292929;
+    max-width: 400px;
+}
+
+/* Backgrounds */
+
+.backgrounds_index {
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+}

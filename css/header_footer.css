@@ -1,0 +1,88 @@
+/* Universal */
+
+footer, 
+header {
+    height: auto;
+    background-color: rgb(17, 17, 17);
+}
+
+/* Header and Navigation */
+
+header {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 50px 100px 50px;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+nav li {
+    padding-left: 50px;
+}
+
+header a {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+}
+
+header a:hover {
+    border-bottom: 3px solid #AC8634;
+}
+
+ .active {
+    border-bottom: 3px solid #AC8634;
+}
+
+/* Footer */
+
+footer h3 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+footer p {
+    line-height: 0.5;
+    color: #C3C3C3;
+}
+
+.museum_logo {
+    display: flex;
+}
+
+.museum_logo h3 {
+    padding-left: 20px;
+}
+
+.museum_logo img {
+    height: 135px;
+    background-color: #c3c3c3;
+    border-radius: 100%;
+}
+
+.social img {
+    height: 50px;
+    padding-right: 5px;
+}
+
+.foot_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 100px auto;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+
+.individual_clr {
+    color: white;
+}
+
+.footer_txt {
+    text-align: center;
+    margin: auto;
+    line-height: unset;
+}

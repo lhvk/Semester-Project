@@ -1,0 +1,35 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.text_explore {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5em;
+    max-width: 400px;
+    padding: 75px;
+    background-color: #EDF1F4;
+    border-radius: 15px;
+}
+
+main {
+    background-image: url(../images/learn-2405206_1920.jpg);
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Universal Properties */
+
+p {
+    line-height: 1.5;
+}

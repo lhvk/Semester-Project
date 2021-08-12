@@ -1,0 +1,32 @@
+main {
+    margin: 100px;
+}
+
+img {
+    max-width: 450px;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2em;
+}
+
+section div {
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.text_exhibitions {
+    max-width: 300px;
+    padding: 30px 50px;
+    margin: auto;
+}
+
+p {
+    color: #292929;
+}
