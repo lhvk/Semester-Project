@@ -6,7 +6,7 @@
 /* Body */
 
 body {
-    background-color: #e6e6e6;
+    background-color: #EDF1F4;
     width: auto;
     margin: 0px;
 }
@@ -29,6 +29,7 @@ body {
    display: flex;
    align-items: baseline;
    justify-content: center;
+   flex-wrap: wrap;
 }
 
 .explore_text img {
@@ -59,24 +60,24 @@ body {
 /* News Page */
 
 .news {
-    margin: 100px 200px; 
+    margin: 100px 200px;
     display: flex;
     flex-direction: column;
 }
 
-.headings {
-    line-height: 0.5;
+.news_header {
+    padding: 0px 25px;
 }
 
-.paragraph_wrapper {
+.columns {
     display: flex;
     line-height: 1.5;
-    flex-wrap: wrap;
 }
-/*
-.paragraph_wrapper div {
-    padding: 0px 100px;
-} */
+
+.col {
+    flex-basis: 100%;
+    padding: 0px 25px;
+}
 
 /* Explore Background With Direct Link */
 
@@ -172,3 +173,56 @@ p {
     position: relative;
     background-position: center;
 }
+
+/* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+
+    /* Explore Area Home */
+
+    .explore_text {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .explore_img {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .text {
+        padding: 25px;
+    }
+
+    .explore_text img {
+        height: 200px;
+    }
+    
+    /* News Section*/
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .news {
+        margin: 0px;
+    }
+
+    /* Buttons */
+
+    .button {
+        width: 60%;
+        height: 5%;
+        font-size: 25px;
+    }
+
+    .individual_font {
+        text-decoration: underline;
+        text-transform: none;
+    }
+    }
+
+  

@@ -86,3 +86,28 @@ footer p {
     margin: auto;
     line-height: unset;
 }
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+
+    .active {
+        border-bottom: none;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 25px;
+        align-items: baseline;
+    }
+    
+    nav {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    nav li {
+        padding-left: 0px;
+    }
+}
