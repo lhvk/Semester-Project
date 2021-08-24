@@ -180,6 +180,24 @@ p {
 
 @media only screen and (max-width: 768px) {
 
+    /* Background Images */
+
+    .backgrounds_index {
+        background-attachment: unset;
+    }
+
+    .visit_link {
+        height: 300px;
+    }
+
+    .exhibitions_link {
+        height: 400px;
+    }
+
+    .explore_link {
+        height: 400px;
+    }
+
     /* Explore Area Home */
 
     .explore_text {
