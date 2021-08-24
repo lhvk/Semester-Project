@@ -87,7 +87,9 @@ footer p {
     line-height: unset;
 }
 
-/* Mobile */
+/* ------ Mobile ------*/
+
+/* Header */
 
 @media only screen and (max-width: 768px) {
 
@@ -110,4 +112,27 @@ footer p {
     nav li {
         padding-left: 0px;
     }
+
+    /*------ Footer -------*/
+
+    .foot_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto 80px auto;
+        justify-content: unset;
+        padding: 25px 0px;
+    }
+
+    .museum_logo {
+        align-items: center;
+    }
+    
+    .museum_logo img {
+        height: 80px;
+    }
+
+    .donate {
+        padding-bottom: 20px;
+    }
+
 }
