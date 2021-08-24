@@ -33,3 +33,19 @@ main {
 p {
     line-height: 1.5;
 }
+
+/* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+
+    section {
+        padding: 0px;
+    }
+
+    .text_explore {
+        border-radius: unset;
+        padding: 25px;
+    }
+}
