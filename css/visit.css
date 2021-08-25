@@ -16,7 +16,7 @@ section {
 
 .text_visit {
     max-width: 400px;
-    padding: 75px;
+    padding: 0px 75px 75px;
     background-color:#EDF1F4;
     border-radius: 15px;
 }

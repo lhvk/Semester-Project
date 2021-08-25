@@ -72,7 +72,7 @@ footer p {
 .foot_wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: auto 100px auto;
+    margin: 0px;
     justify-content: space-evenly;
     padding: 50px 0px;
 }
@@ -89,7 +89,7 @@ footer p {
 
 /* ------ Mobile ------*/
 
-/* Header */
+/*------ Header--------*/
 
 @media only screen and (max-width: 768px) {
 
@@ -118,9 +118,11 @@ footer p {
     .foot_wrapper {
         display: flex;
         flex-wrap: wrap;
-        margin: auto 80px auto;
+        margin: 0px;
         justify-content: unset;
         padding: 25px 0px;
+        flex-direction: column;
+        align-content: center;
     }
 
     .museum_logo {

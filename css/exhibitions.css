@@ -38,7 +38,7 @@ p {
 @media only screen and (max-width: 768px) {
 
 main {
-    margin: 20px 0px 0px 0px;
+    margin: 0px;
 }
 
 section div img {

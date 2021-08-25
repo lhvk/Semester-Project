@@ -43,6 +43,7 @@ button {
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
+    
     .text_get_involved {
         padding: 20px;
     }
