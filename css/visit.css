@@ -16,9 +16,13 @@ section {
 
 .text_visit {
     max-width: 400px;
-    padding: 0px 75px 75px;
+    padding: 50px;
     background-color:#EDF1F4;
     border-radius: 15px;
+}
+
+.btn_wrap {
+    max-width: 400px;
 }
 
 button {
@@ -29,6 +33,7 @@ button {
     padding: 25px 100px;
     text-transform: uppercase;
     border-style: none;
+    width: 100%;
 }
 
 /* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */

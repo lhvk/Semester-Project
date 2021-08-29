@@ -1,8 +1,3 @@
-.title {
-    font-size: 4rem;
-    text-align: center;
-    margin: 10px;
-}
 
 /* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
 
@@ -10,7 +5,4 @@
 
 @media only screen and (max-width: 768px) {
 
-    .title {
-        font-size: 2rem;
-    }
 }
