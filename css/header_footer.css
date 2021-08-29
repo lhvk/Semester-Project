@@ -15,6 +15,7 @@ header {
     padding: 50px 100px 50px;
     text-transform: uppercase;
     justify-content: space-between;
+    font-weight: 500;
 }
 
 nav {
@@ -31,21 +32,23 @@ header a {
 }
 
 header a:hover {
-    border-bottom: 3px solid #AC8634;
+    border-bottom: 3px solid #EA5147;
 }
 
  .active {
-    border-bottom: 3px solid #AC8634;
+    border-bottom: 3px solid #EA5147;
 }
 
 /* Footer */
 
 footer h3 {
+    font-weight: 500;
     text-transform: uppercase;
     color: #fff;
 }
 
 footer p {
+    font-family: 'Roboto', sans-serif;
     line-height: 0.5;
     color: #C3C3C3;
 }

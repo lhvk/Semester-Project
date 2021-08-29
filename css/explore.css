@@ -18,7 +18,7 @@ section {
 }
 
 main {
-    background-image: url(../images/learn-2405206_1920.jpg);
+    background-image: url(../images/roberto-nickson-396152.jpg);
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -35,18 +35,34 @@ p {
     line-height: 1.5;
 }
 
+/* Magic Tricks */
+
+@media only screen and (min-width: 768px) {
+    .hidden_img {
+        display: none;
+    }
+}
+
 /* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
 
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
 
+    main {
+        background: none;
+    }
+
     section {
-        padding: 25px;
+        padding: 0px;
     }
 
     .text_explore {
         border-radius: unset;
         padding: 25px;
+    }
+
+    .hidden_img img {
+        width: 100%;
     }
 }

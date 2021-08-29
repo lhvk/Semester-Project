@@ -1,6 +1,21 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;500;700&display=swap');
 
-* { font-family: 'Roboto', sans-serif;
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Text */
+
+h1, h2, h3{
+    color: #EA5147;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    color: #323954;
+    max-width: 400px;
+    font-family: 'Lora', serif;
 }
 
 /* Body */
@@ -30,6 +45,10 @@ body {
    align-items: baseline;
    justify-content: center;
    flex-wrap: wrap;
+}
+
+.explore_img h1 {
+    color: black;
 }
 
 .explore_text img {
@@ -134,7 +153,7 @@ body {
   }
 
   .button1:hover {
-      background:#15110E;
+      background:#EA5147;;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
   }
 
@@ -153,17 +172,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
-
-/* Text */
-
-h1, h2, h3 {
-    color: black;
-}
-
-p {
-    color: #292929;
-    max-width: 400px;
 }
 
 /* Backgrounds */

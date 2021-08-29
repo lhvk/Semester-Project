@@ -37,6 +37,10 @@ p {
 
 @media only screen and (max-width: 768px) {
 
+header {
+    margin-bottom: 50px;
+}
+
 main {
     margin: 0px;
 }
