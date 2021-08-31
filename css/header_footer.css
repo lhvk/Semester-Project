@@ -28,15 +28,14 @@ nav li {
 
 header a {
     border-bottom: 3px solid transparent;
-    padding-bottom: 5px;
 }
 
 header a:hover {
     border-bottom: 3px solid #EA5147;
 }
 
- .active {
-    border-bottom: 3px solid #EA5147;
+.active {
+    color: #EA5147;
 }
 
 /* Footer */
@@ -90,11 +89,21 @@ footer p {
     line-height: unset;
 }
 
-/* ------ Mobile ------*/
+/* ------  ------ ------ ------ Mobile  ------ ------ ------ ------ */
 
-/*------ Header--------*/
+
 
 @media only screen and (max-width: 768px) {
+
+    /*------ Header--------*/
+
+    header a {
+        border-bottom: none;
+    }
+
+    header a:hover {
+        border-bottom: none;
+    }
 
     .active {
         border-bottom: none;
