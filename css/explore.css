@@ -8,7 +8,6 @@ section {
 
 .text_explore {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     column-gap: 5em;
     max-width: 400px;
@@ -60,6 +59,7 @@ p {
     .text_explore {
         border-radius: unset;
         padding: 25px;
+        max-width: none;
     }
 
     .hidden_img img {
