@@ -113,6 +113,8 @@ footer p {
         flex-direction: column;
         padding: 25px;
         align-items: baseline;
+        position: sticky;
+        top: 0;
     }
     
     nav {
@@ -149,4 +151,7 @@ footer p {
         padding-bottom: 20px;
     }
 
+    footer {
+        position: absolute;
+    }
 }

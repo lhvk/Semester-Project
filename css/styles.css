@@ -192,6 +192,7 @@ a {
 
     .backgrounds_index {
         background-attachment: unset;
+        position: unset;
     }
 
     .visit_link {

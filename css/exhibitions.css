@@ -37,12 +37,12 @@ p {
 
 @media only screen and (max-width: 768px) {
 
-header {
-    margin-bottom: 50px;
-}
-
 main {
     margin: 0px;
+}
+
+section:first-child {
+    margin-top: 75px;
 }
 
 section div img {
@@ -61,5 +61,6 @@ section div img {
 section div {
     margin: 0px;
     border-radius: 0px;
+    background-color: unset;
 }
 }
