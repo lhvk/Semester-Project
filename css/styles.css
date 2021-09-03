@@ -266,4 +266,17 @@ a {
         }
     }
 
+    /* Making the columns appear on top of eachother instead of being cramped together. Also centers the column */
+
+    @media only screen and (min-width: 769px) and (max-width: 1200px) {
+
+        .news {
+            align-items: center;
+        }
+
+        .columns {
+            flex-direction: column;
+        }
+    }
+
   
