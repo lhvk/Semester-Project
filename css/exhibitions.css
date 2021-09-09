@@ -1,41 +1,56 @@
+/* ------------------------------------------- 
+´´´´´´´´´´´´´ SEMESTER PROJECT 1 `````````````
+------------------------------------------- */
+
+/* _-_-_-_-_-_-_ Exhibitions CSS -_-_-_-_-_-_- */
+
+/*-*-*-*-* Main & Sections *-*-*-*-*/
+
 main {
     margin: 100px;
 }
 
-img {
-    max-width: 450px;
-    height: 300px;
-    border-radius: 15px 15px 0px 0px;
-}
 
 section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     column-gap: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 section div {
-    margin: 20px;
     background-color: white;
     border-radius: 15px;
+    margin: 20px;
+}
+
+/*-*-*-*-* Images & Text *-*-*-*-*/
+
+img {
+    border-radius: 15px 15px 0px 0px;
+    height: 300px;
+    max-width: 450px;
 }
 
 .text_exhibitions {
+    margin: auto;
     max-width: 300px;
     padding: 30px 50px;
-    margin: auto;
 }
 
 p {
     color: #292929;
 }
 
-/* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
+/* --------------------------------------- 
+´´´´´´´´´´´´´ RESPONSIVENESS `````````````
+------------------------------------------ */
 
-/* Mobile */
+/* _-_-_-_-_-_-_ MOBILE -_-_-_-_-_-_- */
 
 @media only screen and (max-width: 768px) {
+
+/*-*-*-*-* Main & Sections *-*-*-*-*/
 
 main {
     margin: 0px;
@@ -45,22 +60,26 @@ section:first-child {
     margin-top: 75px;
 }
 
+section div {
+    background-color: unset;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+/*-*-*-*-* Images & Text *-*-*-*-*/
+
 section div img {
     border-radius: 0px;
-    width: 100%;
     max-width: unset;
+    width: 100%;
 }
 
 .text_exhibitions {
-    margin: 0px;
     border-radius: 0px;
+    margin: 0px;
     max-width: unset;
     padding: 25px;
 }
 
-section div {
-    margin: 0px;
-    border-radius: 0px;
-    background-color: unset;
-}
+
 }

@@ -1,45 +1,57 @@
+/* ------------------------------------------- 
+´´´´´´´´´´´´´ SEMESTER PROJECT 1 `````````````
+------------------------------------------- */
+
+/* _-_-_-_-_-_-_ Visit CSS -_-_-_-_-_-_- */
+
+/*-*-*-*-* Main & Section *-*-*-*-*/
+
 main {
-    background-image: url(../images/mavis-cw-164128.jpg);
-    background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    background-image: url(../images/mavis-cw-164128.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 section {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 50px;
 }
 
 .text_visit {
-    max-width: 400px;
-    padding: 50px;
     background-color:#EDF1F4;
     border-radius: 15px;
+    max-width: 400px;
+    padding: 50px;
 }
+
+/*-*-*-*-* Button *-*-*-*-*/
 
 .btn_wrap {
     max-width: 400px;
 }
 
 button {
-    font-weight: 700;
-    font-size: 20px;
     background: #EA5147;
     border-radius: 10px;
+    border-style: none;
     color: white;
+    font-size: 20px;
+    font-weight: 700;
     padding: 25px 100px;
     text-transform: uppercase;
-    border-style: none;
     width: 100%;
 }
 
-/* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
+/* ------------------------------------------- 
+´´´´´´´´´´´´´´ RESPONSIVENESS ````````````````
+------------------------------------------- */
 
-/* Mobile */
+/* _-_-_-_-_-_-_ Mobile -_-_-_-_-_-_- */
 
 @media only screen and (max-width: 768px) {
 
@@ -52,7 +64,7 @@ button {
     }
 
     .text_visit {
-        padding: 25px;
         border-radius: unset;
+        padding: 25px;
     }
 }

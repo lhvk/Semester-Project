@@ -1,63 +1,80 @@
+/* ------------------------------------------- 
+´´´´´´´´´´´´´ SEMESTER PROJECT 1 `````````````
+------------------------------------------- */
+
+/* _-_-_-_-_-_-_ Get Involved CSS -_-_-_-_-_-_- */
+
+/*-*-*-*-* Main & Sections *-*-*-*-*/
+
 main {
-    background-image: url(../images/william-bout-264826.jpg);
-    background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    background-image: url(../images/william-bout-264826.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 section {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 50px;
 }
 
 .text_get_involved {
-    max-width: 400px;
-    padding: 75px;
     background-color: #EDF1F4;
     border-radius: 15px;
+    max-width: 400px;
+    padding: 75px;
 }
 
+/*-*-*-*-* Button *-*-*-*-*/
+
 .button_wrap {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0 50px 50px;
 }
 
 button {
-    font-weight: 700;
-    font-size: 20px;
     background: #EA5147;
     border-radius: 10px;
+    border-style: none;
     color: white;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 550px;
     padding: 25px 100px;
     text-transform: uppercase;
-    border-style: none;
-    max-width: 550px;
     width: 100%;
 }
 
-/* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
+/* --------------------------------------- 
+´´´´´´´´´´´´´ RESPONSIVENESS `````````````
+------------------------------------------ */
 
-/* Mobile */
+/* _-_-_-_-_-_-_ MOBILE -_-_-_-_-_-_- */
 
 @media only screen and (max-width: 768px) {
 
+/*-*-*-*-* Main & Sections *-*-*-*-*/
+
     main {
         position: unset;
-    }
-    
-    .text_get_involved {
-        padding: 20px;
     }
 
     section {
         padding: 25px;
     }
+
+        
+    .text_get_involved {
+        padding: 20px;
+    }
+
+/*-*-*-*-* Button *-*-*-*-*/
 
     .button_wrap {
         padding: 25px 25px 50px;

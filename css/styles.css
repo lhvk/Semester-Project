@@ -1,50 +1,56 @@
+/* ------------------------------------------- 
+´´´´´´´´´´´´´ SEMESTER PROJECT 1 `````````````
+------------------------------------------- */
+
+/* _-_-_-_-_-_-_ Index CSS -_-_-_-_-_-_- */
+
+/*-*-*-*-* Text and Font Properties *-*-*-*-*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Text */
-
 h1, h2, h3{
     color: #EA5147;
-    text-transform: uppercase;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 p {
     color: #323954;
-    max-width: 400px;
     font-family: 'Lora', serif;
+    max-width: 400px;
 }
 
-/* Body */
+/*-*-*-*-* Body *-*-*-*-*/
 
 body {
     background-color: #EDF1F4;
-    width: auto;
     margin: 0px;
+    width: auto;
 }
 
-/* Home Page */
+/*-*-*-*-* Visit-Background With Direct Link *-*-*-*-*/
 
 .visit_link {
+    align-items: center;
     background-image: url(../images/exhibition-1863344_1920.jpg);
-    height: 999px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items: center;
+    height: 999px;
     justify-content: center;
 }
 
-/* Museum Info Page */
+/*-*-*-*-* Museum Info Area *-*-*-*-*/
 
 .explore_text {
-   display: flex;
    align-items: baseline;
-   justify-content: center;
+   display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .explore_img h1 {
@@ -64,24 +70,24 @@ body {
     padding: 100px;
 }
 
-/* Exhibitions Page */
+/*-*-*-*-* Exhibitions-Background With Direct Link *-*-*-*-*/
 
 .exhibitions_link {
+    align-items: center;
     background-image: url(../images/jesse-orrico-60373.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1271.69px;
     display: flex;
-    align-items: center;
+    height: 1271.69px;
     justify-content: center;
 }
 
-/* News Page */
+/*-*-*-*-* News Area *-*-*-*-*/
 
 .news {
-    margin: 100px 200px;
     display: flex;
     flex-direction: column;
+    margin: 100px 200px;
 }
 
 .news_header {
@@ -98,15 +104,15 @@ body {
     padding: 0px 25px;
 }
 
-/* Explore Background With Direct Link */
+/*-*-*-*-* Explore-Background With Direct Link *-*-*-*-*/
 
 .explore_link {
+    align-items: center;
     background-image: url(../images/andrew-ruiz-348421.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1277px;
     display: flex;
-    align-items: center;
+    height: 1277px;
     justify-content: center;
 }
 
@@ -116,48 +122,50 @@ body {
     text-transform: initial;
 }
 
-/* Buttons */
+/*-*-*-*-* Buttons *-*-*-*-*/
 
 .small_btn {
     background-color: #C3C3C3;
-    color: black;
-    text-align: center;
     border: none;
-    padding: 10px 22px;
+    color: black;
     font-weight: bold;
+    padding: 10px 22px;
+    text-align: center;
 }
 
 .medium_btn {
-    font-size: 20px;
     background: black;
     border-radius: 10px;
     color: white;
+    font-size: 20px;
     padding: 25px 100px;
     text-transform: uppercase;
 }
 
 .button {
-    border-style: solid;
-    border-color: #fff;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	text-transform: uppercase;
 	background: rgba(0, 0, 0, 0.5);
-    height: 100px;
-    width: 400px;
-	padding: 20px;
 	border-radius: 50px;
-    transition:all 0.4s ease-in-out;
-  }
+	padding: 20px;
+	text-transform: uppercase;
+    align-items: center;
+    border-color: #fff;
+    border-style: solid;
+    display: flex;
+    font-size: 50px;
+    height: 100px;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    width: 400px;
+}
 
-  .button1:hover {
-      background:#EA5147;;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
-  }
+/*-*-*-*-* Pseudo Elements *-*-*-*-*/
 
-  .button2:hover {
+.button1:hover {
+    background:#EA5147;;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
+}
+
+.button2:hover {
     background:#4F4D6D;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
 }
@@ -167,14 +175,14 @@ body {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
 }
 
-/* Links */
+/*-*-*-*-* Links *-*-*-*-*/
 
 a {
     text-decoration: none;
     color: white;
 }
 
-/* Backgrounds */
+/*-*-*-*-* Backgrounds *-*-*-*-*/
 
 .backgrounds_index {
     background-attachment: fixed;
@@ -182,13 +190,15 @@ a {
     background-position: center;
 }
 
-/* --------------------------------------------- RESPONSIVENESS ---------------------------------------- */
+/* --------------------------------------- 
+´´´´´´´´´´´´´ RESPONSIVENESS `````````````
+------------------------------------------ */
 
-/* Mobile */
+/* _-_-_-_-_-_-_ MOBILE -_-_-_-_-_-_- */
 
 @media only screen and (max-width: 768px) {
 
-    /* Background Images */
+/*-*-*-*-* Background Images *-*-*-*-*/
 
     .backgrounds_index {
         background-attachment: unset;
@@ -207,16 +217,16 @@ a {
         height: 400px;
     }
 
-    /* Explore Area Home */
+/*-*-*-*-* Explore Area Home *-*-*-*-*/
 
     .explore_text {
-        flex-wrap: nowrap;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .explore_img {
-        display: flex;
         align-items: center;
+        display: flex;        
         padding: 25px;
     }
 
@@ -227,8 +237,8 @@ a {
     .explore_text img {
         height: 200px;
     }
-
-    /* max-width */
+    
+/*-*-*-*-* Max Width removed on text *-*-*-*-*/
 
     .text_explore p,
     .col p,
@@ -236,7 +246,7 @@ a {
         max-width: none;
     }
     
-    /* News Section*/
+/*-*-*-*-* News Section *-*-*-*-*/
 
     .columns {
         flex-direction: column;
@@ -246,12 +256,12 @@ a {
         margin: 0px;
     }
 
-    /* Buttons */
+/*-*-*-*-* Buttons *-*-*-*-*/
 
     .button {
-        width: 250px;
-        height: 30px;
         font-size: 25px;
+        height: 30px;
+        width: 250px;
     }
 
     .individual_font {
@@ -260,23 +270,30 @@ a {
     }
     }
 
-    @media only screen and (min-width: 438px) and (max-width: 900px){
-        .explore_img {
-            display: none;
-        }
+/*
+Removes the image of a kid playing with geometrical figures to make the site look cleaner
+*/
+
+@media only screen and (min-width: 438px) and (max-width: 900px) {
+    
+    .explore_img {            
+        display: none;
+    }
+}
+
+/* 
+Making the columns appear on top of eachother instead of being cramped together. Also centers the columns 
+*/
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+
+    .news {
+        align-items: center;
     }
 
-    /* Making the columns appear on top of eachother instead of being cramped together. Also centers the column */
-
-    @media only screen and (min-width: 769px) and (max-width: 1200px) {
-
-        .news {
-            align-items: center;
-        }
-
-        .columns {
-            flex-direction: column;
-        }
+    .columns {
+        flex-direction: column;
     }
+}
 
   
