@@ -31,7 +31,7 @@ section {
   background-color: #edf1f4;
   border-radius: 15px;
   max-width: 305px;
-  padding: 75px;
+  padding: 50px;
 }
 
 /*-*-*-*-* Button *-*-*-*-*/
@@ -40,7 +40,6 @@ section {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 25px 50px 50px;
 }
 
 button {
@@ -67,6 +66,7 @@ button {
 
   main {
     position: unset;
+    background-image: none;
   }
 
   section {
@@ -78,10 +78,6 @@ button {
   }
 
   /*-*-*-*-* Button *-*-*-*-*/
-
-  .button_wrap {
-    padding: 25px 25px 50px;
-  }
 
   button {
     max-width: 440px;

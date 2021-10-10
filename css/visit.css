@@ -64,6 +64,7 @@ button {
 @media only screen and (max-width: 768px) {
   main {
     position: unset;
+    background-image: none;
   }
 
   section {
