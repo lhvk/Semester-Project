@@ -6,188 +6,190 @@
 
 /*-*-*-*-* Text and Font Properties *-*-*-*-*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;500;700&display=swap");
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3{
-    color: #EA5147;
-    font-weight: 700;
-    text-transform: uppercase;
+h1,
+h2,
+h3 {
+  color: #ea5147;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 p {
-    color: #323954;
-    font-family: 'Lora', serif;
-    max-width: 400px;
+  color: #323954;
+  font-family: "Lora", serif;
+  max-width: 400px;
 }
 
 /*-*-*-*-* Body *-*-*-*-*/
 
 body {
-    background-color: #EDF1F4;
-    margin: 0px;
-    width: auto;
+  background-color: #edf1f4;
+  margin: 0px;
+  width: auto;
 }
 
 /*-*-*-*-* Visit-Background With Direct Link *-*-*-*-*/
 
 .visit_link {
-    align-items: center;
-    background-image: url(../images/exhibition-1863344_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 999px;
-    justify-content: center;
+  align-items: center;
+  background-image: url(../images/exhibition-1863344_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 750px;
+  justify-content: center;
 }
 
 /*-*-*-*-* Museum Info Area *-*-*-*-*/
 
 .explore_text {
-   align-items: baseline;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .explore_img h1 {
-    color: black;
+  color: black;
 }
 
 .explore_text img {
-    height: 382px;
+  height: 382px;
 }
 
 .explore_text h1 {
-    max-width: 255px;
+  max-width: 255px;
 }
 
 .text {
-    line-height: 1.5;
-    padding: 100px;
+  line-height: 1.5;
+  padding: 100px;
 }
 
 /*-*-*-*-* Exhibitions-Background With Direct Link *-*-*-*-*/
 
 .exhibitions_link {
-    align-items: center;
-    background-image: url(../images/jesse-orrico-60373.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 1271.69px;
-    justify-content: center;
+  align-items: center;
+  background-image: url(../images/jesse-orrico-60373.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 750px;
+  justify-content: center;
 }
 
 /*-*-*-*-* News Area *-*-*-*-*/
 
 .news {
-    display: flex;
-    flex-direction: column;
-    margin: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 200px;
 }
 
 .news_header {
-    padding: 0px 25px;
+  padding: 0px 25px;
 }
 
 .columns {
-    display: flex;
-    line-height: 1.5;
+  display: flex;
+  line-height: 1.5;
 }
 
 .col {
-    flex-basis: 100%;
-    padding: 0px 25px;
+  flex-basis: 100%;
+  padding: 0px 25px;
 }
 
 /*-*-*-*-* Explore-Background With Direct Link *-*-*-*-*/
 
 .explore_link {
-    align-items: center;
-    background-image: url(../images/andrew-ruiz-348421.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 1277px;
-    justify-content: center;
+  align-items: center;
+  background-image: url(../images/andrew-ruiz-348421.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 750px;
+  justify-content: center;
 }
 
 .individual_font {
-    font-size: 25px;
-    text-decoration: overline;
-    text-transform: initial;
+  font-size: 25px;
+  text-decoration: overline;
+  text-transform: initial;
 }
 
 /*-*-*-*-* Buttons *-*-*-*-*/
 
 .small_btn {
-    background-color: #C3C3C3;
-    border: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 22px;
-    text-align: center;
+  background-color: #c3c3c3;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 22px;
+  text-align: center;
 }
 
 .medium_btn {
-    background: black;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-    padding: 25px 100px;
-    text-transform: uppercase;
+  background: black;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 25px 100px;
+  text-transform: uppercase;
 }
 
 .button {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 50px;
-	padding: 20px;
-	text-transform: uppercase;
-    align-items: center;
-    border-color: #fff;
-    border-style: solid;
-    display: flex;
-    font-size: 50px;
-    height: 100px;
-    justify-content: center;
-    transition: all 0.4s ease-in-out;
-    width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  padding: 20px;
+  text-transform: uppercase;
+  align-items: center;
+  border-color: #fff;
+  border-style: solid;
+  display: flex;
+  font-size: 50px;
+  height: 100px;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+  width: 400px;
 }
 
 /*-*-*-*-* Pseudo Elements *-*-*-*-*/
 
 .button1:hover {
-    background:#EA5147;;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
+  background: #ea5147;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
 }
 
 .button2:hover {
-    background:#4F4D6D;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
+  background: #4f4d6d;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
 }
 
 .button3:hover {
-    background:#AC8634;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
+  background: #ac8634;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
 }
 
 /*-*-*-*-* Links *-*-*-*-*/
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /*-*-*-*-* Backgrounds *-*-*-*-*/
 
 .backgrounds_index {
-    background-attachment: fixed;
-    position: relative;
-    background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
 }
 
 /* --------------------------------------- 
@@ -197,88 +199,86 @@ a {
 /* _-_-_-_-_-_-_ MOBILE -_-_-_-_-_-_- */
 
 @media only screen and (max-width: 768px) {
+  /*-*-*-*-* Background Images *-*-*-*-*/
 
-/*-*-*-*-* Background Images *-*-*-*-*/
+  .backgrounds_index {
+    background-attachment: unset;
+    position: unset;
+  }
 
-    .backgrounds_index {
-        background-attachment: unset;
-        position: unset;
-    }
+  .visit_link {
+    height: 300px;
+  }
 
-    .visit_link {
-        height: 300px;
-    }
+  .exhibitions_link {
+    height: 400px;
+  }
 
-    .exhibitions_link {
-        height: 400px;
-    }
+  .explore_link {
+    height: 400px;
+  }
 
-    .explore_link {
-        height: 400px;
-    }
+  /*-*-*-*-* Explore Area Home *-*-*-*-*/
 
-/*-*-*-*-* Explore Area Home *-*-*-*-*/
+  .explore_text {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
-    .explore_text {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+  .explore_img {
+    align-items: center;
+    display: flex;
+    padding: 25px;
+  }
 
-    .explore_img {
-        align-items: center;
-        display: flex;        
-        padding: 25px;
-    }
+  .text {
+    padding: 25px;
+  }
 
-    .text {
-        padding: 25px;
-    }
+  .explore_text img {
+    height: 200px;
+  }
 
-    .explore_text img {
-        height: 200px;
-    }
-    
-/*-*-*-*-* Max Width removed on text *-*-*-*-*/
+  /*-*-*-*-* Max Width removed on text *-*-*-*-*/
 
-    .text_explore p,
-    .col p,
-    .text p {
-        max-width: none;
-    }
-    
-/*-*-*-*-* News Section *-*-*-*-*/
+  .text_explore p,
+  .col p,
+  .text p {
+    max-width: none;
+  }
 
-    .columns {
-        flex-direction: column;
-    }
+  /*-*-*-*-* News Section *-*-*-*-*/
 
-    .news {
-        margin: 0px;
-    }
+  .columns {
+    flex-direction: column;
+  }
 
-/*-*-*-*-* Buttons *-*-*-*-*/
+  .news {
+    margin: 0px;
+  }
 
-    .button {
-        font-size: 25px;
-        height: 30px;
-        width: 250px;
-    }
+  /*-*-*-*-* Buttons *-*-*-*-*/
 
-    .individual_font {
-        text-decoration: underline;
-        text-transform: none;
-    }
-    }
+  .button {
+    font-size: 25px;
+    height: 30px;
+    width: 250px;
+  }
+
+  .individual_font {
+    text-decoration: underline;
+    text-transform: none;
+  }
+}
 
 /*
 Removes the image of a kid playing with geometrical figures to make the site look cleaner
 */
 
 @media only screen and (min-width: 438px) and (max-width: 900px) {
-    
-    .explore_img {            
-        display: none;
-    }
+  .explore_img {
+    display: none;
+  }
 }
 
 /* 
@@ -286,14 +286,11 @@ Making the columns appear on top of eachother instead of being cramped together.
 */
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .news {
+    align-items: center;
+  }
 
-    .news {
-        align-items: center;
-    }
-
-    .columns {
-        flex-direction: column;
-    }
+  .columns {
+    flex-direction: column;
+  }
 }
-
-  

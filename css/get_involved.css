@@ -7,48 +7,53 @@
 /*-*-*-*-* Main & Sections *-*-*-*-*/
 
 main {
-    background-attachment: fixed;
-    background-image: url(../images/william-bout-264826.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-attachment: fixed;
+  background-image: url(../images/william-bout-264826.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 section {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.get_involved_text_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text_get_involved {
-    background-color: #EDF1F4;
-    border-radius: 15px;
-    max-width: 400px;
-    padding: 75px;
+  background-color: #edf1f4;
+  border-radius: 15px;
+  max-width: 305px;
+  padding: 75px;
 }
 
 /*-*-*-*-* Button *-*-*-*-*/
 
 .button_wrap {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 0 50px 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 25px 50px 50px;
 }
 
 button {
-    background: #EA5147;
-    border-radius: 10px;
-    border-style: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    max-width: 550px;
-    padding: 25px 100px;
-    text-transform: uppercase;
-    width: 100%;
+  background: #ea5147;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  max-width: 400px;
+  padding: 25px 100px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 /* --------------------------------------- 
@@ -58,29 +63,27 @@ button {
 /* _-_-_-_-_-_-_ MOBILE -_-_-_-_-_-_- */
 
 @media only screen and (max-width: 768px) {
+  /*-*-*-*-* Main & Sections *-*-*-*-*/
 
-/*-*-*-*-* Main & Sections *-*-*-*-*/
+  main {
+    position: unset;
+  }
 
-    main {
-        position: unset;
-    }
+  section {
+    padding: 25px;
+  }
 
-    section {
-        padding: 25px;
-    }
+  .text_get_involved {
+    padding: 20px;
+  }
 
-        
-    .text_get_involved {
-        padding: 20px;
-    }
+  /*-*-*-*-* Button *-*-*-*-*/
 
-/*-*-*-*-* Button *-*-*-*-*/
+  .button_wrap {
+    padding: 25px 25px 50px;
+  }
 
-    .button_wrap {
-        padding: 25px 25px 50px;
-    }
-
-    button {
-        max-width: 440px;
-    }
-    }
+  button {
+    max-width: 440px;
+  }
+}

@@ -7,44 +7,52 @@
 /*-*-*-*-* Main & Section *-*-*-*-*/
 
 main {
-    background-attachment: fixed;
-    background-image: url(../images/mavis-cw-164128.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-attachment: fixed;
+  background-image: url(../images/mavis-cw-164128.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 section {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
 }
 
 .text_visit {
-    background-color:#EDF1F4;
-    border-radius: 15px;
-    max-width: 400px;
-    padding: 50px;
+  background-color: #edf1f4;
+  border-radius: 15px;
+  max-width: 305px;
+  padding: 50px;
+  margin: 25px;
+}
+
+.opening_hours {
+  display: flex;
+  align-items: last baseline;
+  justify-content: space-evenly;
 }
 
 /*-*-*-*-* Button *-*-*-*-*/
 
 .btn_wrap {
-    max-width: 400px;
+  max-width: 400px;
+  margin-top: 40px;
 }
 
 button {
-    background: #EA5147;
-    border-radius: 10px;
-    border-style: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 25px 100px;
-    text-transform: uppercase;
-    width: 100%;
+  background: #ea5147;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 25px 100px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 /* ------------------------------------------- 
@@ -54,17 +62,16 @@ button {
 /* _-_-_-_-_-_-_ Mobile -_-_-_-_-_-_- */
 
 @media only screen and (max-width: 768px) {
+  main {
+    position: unset;
+  }
 
-    main {
-        position: unset;
-    }
+  section {
+    padding: 0px;
+  }
 
-    section {
-        padding: 0px;
-    }
-
-    .text_visit {
-        border-radius: unset;
-        padding: 25px;
-    }
+  .text_visit {
+    border-radius: unset;
+    padding: 25px;
+  }
 }
