@@ -70,16 +70,24 @@ button {
   }
 
   section {
-    padding: 25px;
+    padding: 0px;
+  }
+
+  .get_involved_text_wrap:first-child {
+    padding-top: 25px;
   }
 
   .text_get_involved {
-    padding: 20px;
+    padding: 0px;
   }
 
   /*-*-*-*-* Button *-*-*-*-*/
 
   button {
     max-width: 440px;
+  }
+
+  .button_wrap {
+    padding: 20px 0px;
   }
 }

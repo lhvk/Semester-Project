@@ -74,5 +74,6 @@ button {
   .text_visit {
     border-radius: unset;
     padding: 25px;
+    margin: 0px;
   }
 }
