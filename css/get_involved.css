@@ -25,6 +25,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 25px;
 }
 
 .text_get_involved {
