@@ -19,14 +19,26 @@ header {
   font-weight: 500;
   justify-content: space-between;
   list-style: none;
-  padding: 50px 100px 50px;
+  padding: 20px 100px 20px;
   text-transform: uppercase;
+}
+
+.home_text span {
+  color: white;
+  font-family: "Righteous", cursive;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.home_text {
+  width: 160px;
 }
 
 /*/ Navigation /*/
 
 nav {
   display: flex;
+  align-items: center;
 }
 
 nav li {
@@ -136,6 +148,7 @@ Removes underlined nav and turning the menu into a column
   }
 
   nav {
+    align-items: unset;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 10px;

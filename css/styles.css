@@ -7,6 +7,7 @@
 /*-*-*-*-* Text and Font Properties *-*-*-*-*/
 
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 * {
   font-family: "Roboto", sans-serif;
@@ -53,14 +54,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.explore_img h1 {
-  color: black;
-}
-
-.explore_text img {
-  height: 382px;
 }
 
 .explore_text h1 {
@@ -225,18 +218,8 @@ a {
     flex-wrap: nowrap;
   }
 
-  .explore_img {
-    align-items: center;
-    display: flex;
-    padding: 25px;
-  }
-
   .text {
     padding: 25px;
-  }
-
-  .explore_text img {
-    height: 200px;
   }
 
   /*-*-*-*-* Max Width removed on text *-*-*-*-*/
