@@ -139,18 +139,18 @@ body {
 
 .button {
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 20px;
   text-transform: uppercase;
   align-items: center;
   border-color: #fff;
   border-style: solid;
   display: flex;
-  font-size: 50px;
-  height: 100px;
+  font-size: 25px;
+  height: 50px;
   justify-content: center;
   transition: all 0.4s ease-in-out;
-  width: 400px;
+  width: 200px;
 }
 
 /*-*-*-*-* Pseudo Elements *-*-*-*-*/
@@ -243,9 +243,9 @@ a {
   /*-*-*-*-* Buttons *-*-*-*-*/
 
   .button {
-    font-size: 25px;
-    height: 30px;
-    width: 250px;
+    font-size: 18px;
+    height: 18px;
+    width: 100px;
   }
 
   .individual_font {
