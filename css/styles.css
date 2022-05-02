@@ -222,12 +222,16 @@ a {
     padding: 25px;
   }
 
-  /*-*-*-*-* Max Width removed on text *-*-*-*-*/
+  /*-*-*-*-* Max Width removed on text and margin removed on main *-*-*-*-*/
 
   .text_explore p,
   .col p,
   .text p {
     max-width: none;
+  }
+
+  main {
+    margin: 0;
   }
 
   /*-*-*-*-* News Section *-*-*-*-*/

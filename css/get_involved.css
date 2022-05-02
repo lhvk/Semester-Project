@@ -1,4 +1,4 @@
-/* ------------------------------------------- 
+/* -------------------------------------------
 ´´´´´´´´´´´´´ SEMESTER PROJECT 1 `````````````
 ------------------------------------------- */
 
@@ -6,33 +6,42 @@
 
 /*-*-*-*-* Main & Sections *-*-*-*-*/
 
-main {
+/* main {
   background-attachment: fixed;
   background-image: url(../images/william-bout-264826.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+} */
+
+.get-involved_image img {
+  width: 100%;
+  aspect-ratio: 4 / 1;
+}
+
+main {
+  margin: 50px 200px;
 }
 
 section {
   display: flex;
   justify-content: center;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 .get_involved_text_wrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 .text_get_involved {
   background-color: #edf1f4;
   border-radius: 15px;
-  max-width: 305px;
-  padding: 50px;
+  max-width: 400px;
+  /* padding: 50px; */
 }
 
 /*-*-*-*-* Button *-*-*-*-*/
@@ -56,7 +65,7 @@ button {
   width: 100%;
 }
 
-/* --------------------------------------- 
+/* ---------------------------------------
 ´´´´´´´´´´´´´ RESPONSIVENESS `````````````
 ------------------------------------------ */
 
@@ -65,13 +74,19 @@ button {
 @media only screen and (max-width: 768px) {
   /*-*-*-*-* Main & Sections *-*-*-*-*/
 
+  .get-involved_image img {
+    width: 100%;
+    aspect-ratio: 1.8 / 1;
+  }
+
   main {
     position: unset;
     background-image: none;
+    margin: 0;
   }
 
-  section {
-    padding: 0px;
+  .text_get_involved {
+    margin: 0px 20px;
   }
 
   .get_involved_text_wrap:first-child {

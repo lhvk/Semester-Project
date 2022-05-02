@@ -6,35 +6,43 @@
 
 /*-*-*-*-* Main & Section *-*-*-*-*/
 
-main {
+/* main {
   background-attachment: fixed;
   background-image: url(../images/mavis-cw-164128.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+} */
+
+main {
+  margin: 50px 200px;
+}
+
+.visit_image img {
+  width: 100%;
+  aspect-ratio: 2.5 / 1;
 }
 
 section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 25px;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 25px; */
 }
 
 .text_visit {
   background-color: #edf1f4;
   border-radius: 15px;
-  max-width: 305px;
-  padding: 50px;
-  margin: 25px;
+  max-width: 400px;
+  width: 100%;
+  /* padding: 50px; */
+  /* margin: 25px; */
 }
 
-.opening_hours {
-  display: flex;
-  align-items: last baseline;
-  justify-content: space-evenly;
-}
+/* .opening_hours {
+  width: 100%;
+} */
 
 /*-*-*-*-* Button *-*-*-*-*/
 
@@ -63,17 +71,19 @@ button {
 
 @media only screen and (max-width: 768px) {
   main {
-    position: unset;
-    background-image: none;
+    /* position: unset;
+    background-image: none; */
+    margin: 0;
   }
 
-  section {
+  /* section {
     padding: 0px;
-  }
+  } */
 
   .text_visit {
-    border-radius: unset;
-    padding: 25px;
-    margin: 0px;
+    /* border-radius: unset;
+    padding: 25px; */
+    margin: 0 20px;
+    width: 90%;
   }
 }
