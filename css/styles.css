@@ -1,283 +1,185 @@
-/* ------------------------------------------- 
-´´´´´´´´´´´´´ SEMESTER PROJECT 1 `````````````
-------------------------------------------- */
+/* ========================================================
+IMPORTS, ROOT, UNIVERSAL STYLING
+======================================================== */
 
-/* _-_-_-_-_-_-_ Index CSS -_-_-_-_-_-_- */
+@import url(cards.css);
 
-/*-*-*-*-* Text and Font Properties *-*-*-*-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+:root {
+  --colorOrange: #ea5147;
+  --colorGrey: #a5a5a5;
+  --colorDark: #1d1d1d;
+  --colorBlack: #000;
+  --colorWhite: #fff;
+  --backgroundColor: #e5e5e5;
+}
 
 * {
-  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 h1,
 h2,
 h3 {
-  color: #ea5147;
-  font-weight: 700;
-  text-transform: uppercase;
+  color: var(--colorWhite);
+  font-weight: 300;
 }
 
-p {
-  color: #323954;
-  font-family: "Lora", serif;
-  max-width: 400px;
-}
+/* ========================================================
+PARALLAX BACKGROUND IMAGE
+======================================================== */
 
-/*-*-*-*-* Body *-*-*-*-*/
-
-body {
-  background-color: #edf1f4;
-  margin: 0px;
-  width: auto;
-}
-
-/*-*-*-*-* Visit-Background With Direct Link *-*-*-*-*/
-
-.visit_link {
-  align-items: center;
-  background-image: url(../images/exhibition-1863344_1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  height: 750px;
-  justify-content: center;
-}
-
-/*-*-*-*-* Museum Info Area *-*-*-*-*/
-
-.explore_text {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.explore_text h1 {
-  max-width: 255px;
-}
-
-.text {
-  line-height: 1.5;
-  padding: 100px;
-}
-
-/*-*-*-*-* Exhibitions-Background With Direct Link *-*-*-*-*/
-
-.exhibitions_link {
-  align-items: center;
-  background-image: url(../images/jesse-orrico-60373.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  height: 750px;
-  justify-content: center;
-}
-
-/*-*-*-*-* News Area *-*-*-*-*/
-
-.news {
-  display: flex;
-  flex-direction: column;
-  margin: 100px 200px;
-}
-
-.news_header {
-  padding: 0px 25px;
-}
-
-.columns {
-  display: flex;
-  line-height: 1.5;
-}
-
-.col {
-  flex-basis: 100%;
-  padding: 0px 25px;
-}
-
-/*-*-*-*-* Explore-Background With Direct Link *-*-*-*-*/
-
-.explore_link {
-  align-items: center;
-  background-image: url(../images/andrew-ruiz-348421.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  height: 750px;
-  justify-content: center;
-}
-
-.individual_font {
-  font-size: 25px;
-  text-decoration: overline;
-  text-transform: initial;
-}
-
-/*-*-*-*-* Buttons *-*-*-*-*/
-
-.small_btn {
-  background-color: #c3c3c3;
-  border: none;
-  color: black;
-  font-weight: bold;
-  padding: 10px 22px;
-  text-align: center;
-}
-
-.medium_btn {
-  background: black;
-  border-radius: 10px;
-  color: white;
-  font-size: 20px;
-  padding: 25px 100px;
-  text-transform: uppercase;
-}
-
-.button {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
-  padding: 20px;
-  text-transform: uppercase;
-  align-items: center;
-  border-color: #fff;
-  border-style: solid;
-  display: flex;
-  font-size: 25px;
-  height: 50px;
-  justify-content: center;
-  transition: all 0.4s ease-in-out;
-  width: 200px;
-}
-
-/*-*-*-*-* Pseudo Elements *-*-*-*-*/
-
-.button1:hover {
-  background: #ea5147;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
-}
-
-.button2:hover {
-  background: #4f4d6d;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
-}
-
-.button3:hover {
-  background: #ac8634;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
-}
-
-/*-*-*-*-* Links *-*-*-*-*/
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-/*-*-*-*-* Backgrounds *-*-*-*-*/
-
-.backgrounds_index {
+.parallax {
+  background-image: url(/images/toa-heftiba-412579.jpg);
   background-attachment: fixed;
-  position: relative;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 40rem;
 }
 
-/* --------------------------------------- 
-´´´´´´´´´´´´´ RESPONSIVENESS `````````````
------------------------------------------- */
+/* ========================================================
+ELEMENTS
+======================================================== */
 
-/* _-_-_-_-_-_-_ MOBILE -_-_-_-_-_-_- */
-
-@media only screen and (max-width: 768px) {
-  /*-*-*-*-* Background Images *-*-*-*-*/
-
-  .backgrounds_index {
-    background-attachment: unset;
-    position: unset;
-  }
-
-  .visit_link {
-    height: 300px;
-  }
-
-  .exhibitions_link {
-    height: 400px;
-  }
-
-  .explore_link {
-    height: 400px;
-  }
-
-  /*-*-*-*-* Explore Area Home *-*-*-*-*/
-
-  .explore_text {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  .text {
-    padding: 25px;
-  }
-
-  /*-*-*-*-* Max Width removed on text and margin removed on main *-*-*-*-*/
-
-  .text_explore p,
-  .col p,
-  .text p {
-    max-width: none;
-  }
-
-  main {
-    margin: 0;
-  }
-
-  /*-*-*-*-* News Section *-*-*-*-*/
-
-  .columns {
-    flex-direction: column;
-  }
-
-  .news {
-    margin: 0px;
-  }
-
-  /*-*-*-*-* Buttons *-*-*-*-*/
-
-  .button {
-    font-size: 18px;
-    height: 18px;
-    width: 100px;
-  }
-
-  .individual_font {
-    text-decoration: underline;
-    text-transform: none;
-  }
+header {
+  background: var(--colorBlack);
+  display: flex;
+  justify-content: center;
+  height: 10rem;
 }
 
-/*
-Removes the image of a kid playing with geometrical figures to make the site look cleaner
-*/
-
-@media only screen and (min-width: 438px) and (max-width: 900px) {
-  .explore_img {
-    display: none;
-  }
+header nav a {
+  color: var(--colorWhite);
+  margin-right: 2rem;
 }
 
-/* 
-Making the columns appear on top of eachother instead of being cramped together. Also centers the columns 
-*/
+section {
+  background: var(--colorBlack);
+  padding: 0 0 5rem;
+}
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-  .news {
-    align-items: center;
-  }
+/* ========================================================
+CONTAINERS
+======================================================== */
 
-  .columns {
-    flex-direction: column;
-  }
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 92rem;
+}
+
+/* GJØRES LIK SOM SECTION HEADING? */
+.container {
+  max-width: 74%;
+  min-height: 30rem;
+  padding: 5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.box > h2 {
+  color: var(--colorBlack);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.box {
+  color: var(--colorBlack);
+  background-color: var(--colorWhite);
+  width: 16rem;
+  height: 15rem;
+  margin: 0;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0) 40%);
+  padding: 0 0 5rem;
+}
+
+.welcome-text {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 5rem;
+  padding-top: 4rem;
+  max-width: 89rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.section-heading {
+  border-top: 0.1px solid var(--colorGrey);
+  padding-top: 4rem;
+  max-width: 89rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 91rem;
+  justify-items: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.card-container--small {
+  display: flex;
+  max-width: 89rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+/* ========================================================
+BUTTONS
+======================================================== */
+.exhibitions-events-btn {
+  color: var(--colorWhite);
+  position: relative;
+}
+
+.exhibitions-events-btn:hover {
+  color: var(--colorWhite);
+}
+
+.exhibitions-events-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 88%;
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--colorWhite);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.exhibitions-events-btn:hover::before {
+  transform: scaleX(1);
 }
