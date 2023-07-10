@@ -1,0 +1,97 @@
+/* ========================================================
+LARGE CARD
+======================================================== */
+
+.card-large {
+  background-color: var(--colorDark);
+  display: flex;
+  flex-direction: row-reverse;
+  transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  max-width: 768px;
+  width: 100%;
+}
+
+.card-img-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-content-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--colorDark);
+  max-width: 300px;
+  width: 100%;
+}
+
+.card-large:hover img {
+  transform: scale(0.9);
+}
+
+.card-header-large {
+  margin: 2rem;
+}
+
+.card-footer-large {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  align-items: baseline;
+}
+
+.card-footer-large p {
+  color: var(--colorOrange);
+  font-size: 0.8rem;
+}
+
+/* ========================================================
+SMALL CARD
+======================================================== */
+
+.card-small {
+  background-color: var(--colorDark);
+  transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.card-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-small:hover img {
+  transform: scale(0.9);
+}
+
+.card-header-small {
+  margin-block: 10px;
+  padding-inline: 20px;
+}
+
+.card-header-small h3 {
+  color: var(--colorOrange);
+}
+
+.card-content-small p {
+  color: var(--colorGrey);
+  padding-inline: 20px;
+  padding-bottom: 10px;
+}
+
+/* ========================================================
+MEDIA QUERIES
+======================================================== */
+
+@media (max-width: 768px) {
+  .card-large {
+    flex-direction: column;
+  }
+
+  .card-img-large img {
+    width: 100%;
+  }
+}

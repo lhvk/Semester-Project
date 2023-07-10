@@ -1,6 +1,6 @@
 # Semester-Project
 
-![cms](https://user-images.githubusercontent.com/77023253/192096928-96431171-6439-4340-a773-ac711e761901.jpg)
+![cms](https://user-assets/images.githubusercontent.com/77023253/192096928-96431171-6439-4340-a773-ac711e761901.jpg)
 
 ## Description
 
@@ -10,8 +10,8 @@ This was a school project and the objective was to create a website for a museum
 
 ## Built with
 
-* HTML
-* CSS
+- HTML
+- CSS
 
 ## Getting started
 
@@ -34,6 +34,9 @@ Please do not making any pull requests to this folder
 ## Acknowledgments
 
 ### Noroff School of Technology and Digital Media
+
 * Provided some stock footage
+
 ### Unsplash for the rest of the footage
 * [Unsplash](https://www.unsplash.com)
+

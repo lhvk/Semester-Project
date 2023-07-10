@@ -2,36 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="keywords"
-      content="museum, exhibitions, evolution, science, anatomy"
-    />
-    <meta name="author" content="Lars Halvor" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/exhibitions.css" />
-    <link rel="stylesheet" href="css/header_footer.css" />
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/19005bca3f.js"
+      crossorigin="anonymous"></script>
+
     <title>Community Science Museum | Exhibitions</title>
   </head>
   <body>
     <header>
-      <div class="home_text">
-        <a href="/index.html"> <span>community science museum</span></a>
+      <div class="header-inner">
+        <a href="index.html">
+          <div class="header-logo">
+            <img
+              src="assets/svg/icon-1719742.svg"
+              alt="Museum Logo" />
+          </div>
+        </a>
+        <input
+          type="checkbox"
+          id="menu-toggle" />
+        <label
+          for="menu-toggle"
+          class="menu-icon"
+          >&#9776;</label
+        >
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="visit.html">visit</a>
+            </li>
+            <li>
+              <a
+                class="active"
+                href="exhibitions.html"
+                >exhibitions</a
+              >
+            </li>
+            <li>
+              <a href="explore.html">explore</a>
+            </li>
+            <li>
+              <a href="get-involved.html">get involved</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="overlay"></div>
       </div>
-      <nav>
-        <li><a href="explore.html">explore</a></li>
-        <li><a href="exhibitions.html" class="active">exhibitions</a></li>
-        <li><a href="visit.html">visit</a></li>
-        <li><a href="get_involved.html">get involved</a></li>
-      </nav>
     </header>
-    <main>
-      <section>
-        <div>
-          <img src="images/celso-405219.jpg" alt="Cosmos" />
-          <div class="text_exhibitions">
-            <h2>Cosmology</h2>
+
+    <main class="exhibitions-main">
+      <h1 class="page-heading">Exhibitions</h1>
+      <section class="exhibitions-section">
+        <div class="exhibitions-card">
+          <img
+            src="assets/images/guillermo-ferla-kEEl9csCutg-unsplash.jpg"
+            alt="Galaxy" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">Cosmology</h3>
             <p>
               Explore the wonders of our cosmos. Our fantastic exhibition, ‘The
               Sky Above Us’, explores the night sky and what we can see and know
@@ -39,6 +78,7 @@
               constellations and galaxies that can be seen and learn a bit about
               the early navigators who used the stars to travel by.
             </p>
+            <br />
             <p>
               Follow the journey of our solar exploration: from early Arab
               traders, to Galileo’s telescope, to the latest exploration of the
@@ -46,19 +86,19 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="exhibitions-card">
           <img
-            src="images/skeleton-414543_1920.jpg"
-            alt="Three evolutionary skeletons"
-          />
-          <div class="text_exhibitions">
-            <h2>Evolution</h2>
+            src="assets/images/skeleton-414543_1920.jpg"
+            alt="Three evolutionary skeletons" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">Evolution</h3>
             <p>
               For centuries, philosophers and scientists have wrestled with the
               question of our origins. Where do we come from and how did we get
               here? Since Darwin proposed his theory of evolution we have had a
               framework for exploring and understanding our place in this world.
             </p>
+            <br />
             <p>
               Discover the origins of life on this planet and how the species we
               know today have evolved our time. You can also take some time to
@@ -67,19 +107,19 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="exhibitions-card">
           <img
-            src="images/mammoth-1257288_1920.jpg"
-            alt="Skeleton of a mammoth"
-          />
-          <div class="text_exhibitions">
-            <h2>Ecology</h2>
+            src="assets/images/mammoth-1257288_1920.jpg"
+            alt="Skeleton of a mammoth" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">Ecology</h3>
             <p>
               As we learn more and more of the impact humans are having on the
               planet, the more important it becomes that scientists explore how
               to create a sustainable future not just for humans but for the
               whole planet.
             </p>
+            <br />
             <p>
               In our ecology section of the museum, we unpack the dangers we
               currently face including global warming, extinction of species,
@@ -88,15 +128,18 @@
             </p>
           </div>
         </div>
-        <div>
-          <img src="images/heart-2607178_1920.jpg" alt="Heart" />
-          <div class="text_exhibitions">
-            <h2>Biology and Medicine</h2>
+        <div class="exhibitions-card">
+          <img
+            src="assets/images/heart-2607178_1920.jpg"
+            alt="Heart" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">Biology and Medicine</h3>
             <p>
               From micro-organisms to the human body, major breakthroughs in
               biology are offering us unique insights into the great wonders of
               the tiny world.
             </p>
+            <br />
             <p>
               For many people their life expectancy is much longer and their
               quality of life much improved, thanks to the growth of our
@@ -105,6 +148,7 @@
               breakthroughs including the discovery of penicillin and the first
               heart transplant.
             </p>
+            <br />
             <p>
               Many of our great medicinal discoveries have come not only from
               the lab, but also from observing animals in the wild. Often our
@@ -112,13 +156,12 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="exhibitions-card">
           <img
-            src="images/billetto-editorial-334686.jpg"
-            alt="A young man painting wearing 3D glasses"
-          />
-          <div class="text_exhibitions">
-            <h2>Robotics and A.I.</h2>
+            src="assets/images/billetto-editorial-334686.jpg"
+            alt="A young man painting wearing 3D glasses" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">Robotics and A.I.</h3>
             <p>
               The information revolution is here and robotics and artificial
               intelligence are the science of the future. From useful home
@@ -128,18 +171,82 @@
           </div>
         </div>
       </section>
+
+      <hr />
+
+      <h2
+        class="page-heading"
+        style="font-size: 32px">
+        Events
+      </h2>
+      <section class="exhibitions-section">
+        <div class="exhibitions-card">
+          <img
+            src="/assets/images/scientific-2040795_1280.jpg"
+            alt="woman scientist" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">
+              Visiting Professor of Aeronautics
+            </h3>
+            <p>
+              It is our pleasure to announce that Prof Sheila Widnall from the
+              Massachusetts Institute of Technology will be delivering 3
+              lectures on the development of aeronautics and where the future
+              lies in this exciting ‘space’.
+            </p>
+            <p class="exhibition-date">13 Oct 2022 - 16 Oct 2022</p>
+          </div>
+        </div>
+
+        <div class="exhibitions-card">
+          <img
+            src="/assets/images/simon-infanger-J05sVmuxeEg-unsplash.jpg"
+            alt="Animal skeletons on display" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">Night in the Museum</h3>
+            <p>
+              Get your family together for an exciting night in the museum as
+              you sleep over beside dinosaurs and science displays. Bring your
+              own sleeping bag and get ready to rough it as we go exploring the
+              wonders of science.
+            </p>
+            <p class="exhibition-date">13 Oct 2022 - 16 Oct 2022</p>
+          </div>
+        </div>
+
+        <div class="exhibitions-card">
+          <img
+            src="assets/images/andrew-ruiz-348421.jpg"
+            alt="A young man painting wearing 3D glasses" />
+          <div class="text-exhibitions">
+            <h3 class="exhibition-heading">Energetica Exhibition on Loan</h3>
+            <p>
+              On loan from the NEMO Science Museum in Amsterdam, the Energetica
+              exhibition is coming to the Community Science Museum. It’s a
+              series of installations that allow visitors to experience the
+              power of the elements as we harness them. From solar energy
+              powering lighting, to ‘Wind Island’ that shows how turbines are
+              able to use and control wind to create power.
+            </p>
+            <p class="exhibition-date">13 Oct 2022 - 16 Oct 2022</p>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
-      <div class="foot_wrapper">
-        <div class="museum_logo">
-          <img src="images/open-science-735787.png" alt="Museum Logo" />
+      <div class="foot-wrapper">
+        <div class="museum-logo">
+          <img
+            src="assets/svg/icon-1719742.svg"
+            alt="Museum Logo" />
           <h3>
-            community <br />
-            science <br />
-            museum
+            <span class="single-letter-style">c</span>ommunity <br />
+            <span class="single-letter-style">s</span>ience <br />
+            <span class="single-letter-style">m</span>useum
           </h3>
         </div>
-        <div class="foot_item">
+        <div class="foot-item">
           <h3>adress</h3>
           <p>Community Science Museum</p>
           <p>Robert Oppenheimer bvd.1</p>
@@ -149,31 +256,41 @@
         <div class="social">
           <h3>follow us</h3>
           <a href="https://www.facebook.com">
-            <img src="images/facebook-circle.png" alt="Facebook icon"
+            <img
+              src="assets/icons/facebook-circle.png"
+              alt="Facebook icon"
           /></a>
           <a href="https://www.instagram.com"
-            ><img src="images/instagram-circle.png" alt="Instagram icon"
+            ><img
+              src="assets/icons/instagram-circle.png"
+              alt="Instagram icon"
           /></a>
           <a href="https://www.twitter.com"
-            ><img src="images/twitter-circle.png" alt="Twitter icon"
+            ><img
+              src="assets/icons/twitter-circle.png"
+              alt="Twitter icon"
           /></a>
         </div>
         <div class="donate">
           <h3>support us</h3>
           <div>
-            <a class="small_btn" href="#">DONATE</a>
+            <a
+              class="small-btn"
+              href="#"
+              >Donate</a
+            >
           </div>
         </div>
-        <div class="foot_item">
+        <div class="foot-item">
           <h3>contact</h3>
           <p>phone</p>
-          <p><span class="individual_clr">+47 0201 3000</span></p>
+          <p><span class="individual-color">+47 0201 3000</span></p>
           <p>email</p>
           <p><a href="mailto:contact@csm.org">contact@csm.org</a></p>
         </div>
-        <div class="foot_item">
+        <div class="foot-item">
           <h3>hours</h3>
-          <p>Mon: <span class="individual_clr">Closed</span></p>
+          <p>Mon: <span class="individual-color">Closed</span></p>
           <p>Tue: 10:00 – 16:00</p>
           <p>Wed: 10:00 – 16:00</p>
           <p>Thu: 10:00 – 16:00</p>
@@ -182,8 +299,8 @@
           <p>Sun: 09:00 – 13:00</p>
         </div>
       </div>
-      <p class="footer_txt">
-        &copy 2021 All rights reserved Community Science Museum
+      <p class="footer-copyright-text">
+        &copy 2023 lhvk, Community Science Museum
       </p>
     </footer>
   </body>
