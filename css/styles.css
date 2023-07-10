@@ -3,13 +3,18 @@ IMPORTS, ROOT, UNIVERSAL STYLING
 ======================================================== */
 
 @import url(cards.css);
+@import url(header-footer.css);
+@import url(visit.css);
+@import url(exhibitions.css);
+@import url(explore.css);
+@import url(get-involved.css);
 
 :root {
-  --colorOrange: #ea5147;
+  --colorOrange: #ff8c1a;
   --colorGrey: #a5a5a5;
   --colorDark: #1d1d1d;
   --colorBlack: #000;
-  --colorWhite: #fff;
+  --colorWhite: #fffff0;
   --backgroundColor: #e5e5e5;
 }
 
@@ -23,10 +28,17 @@ IMPORTS, ROOT, UNIVERSAL STYLING
 body {
   font-family: sans-serif;
   height: 100%;
+  background: var(--colorBlack);
 }
 
 html {
   height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1,
@@ -36,46 +48,39 @@ h3 {
   font-weight: 300;
 }
 
-/* ========================================================
-PARALLAX BACKGROUND IMAGE
-======================================================== */
+p {
+  line-height: 1.5;
+}
 
+/* ======================================================== PARALLAX BACKGROUND IMAGE ======================================================== */
 .parallax {
-  background-image: url(/images/toa-heftiba-412579.jpg);
+  background-image: url(/assets/images/background-image.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 40rem;
+  min-height: 500px;
 }
 
 /* ========================================================
 ELEMENTS
 ======================================================== */
 
-header {
-  background: var(--colorBlack);
-  display: flex;
-  justify-content: center;
-  height: 10rem;
-}
-
-header nav a {
-  color: var(--colorWhite);
-  margin-right: 2rem;
-}
-
 section {
   background: var(--colorBlack);
   padding: 0 0 5rem;
+}
+
+.page-heading {
+  text-align: center;
 }
 
 /* ========================================================
 CONTAINERS
 ======================================================== */
 
-.header__inner {
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,52 +88,58 @@ CONTAINERS
   width: 92rem;
 }
 
-/* GJØRES LIK SOM SECTION HEADING? */
 .container {
-  max-width: 74%;
-  min-height: 30rem;
-  padding: 5rem;
+  height: 640px;
+  padding: 0 5rem;
+  max-width: 89rem;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: row;
-}
-
-.box > h2 {
-  color: var(--colorBlack);
-  font-weight: 400;
-  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .box {
-  color: var(--colorBlack);
-  background-color: var(--colorWhite);
-  width: 16rem;
-  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--colorWhite);
+  background-color: var(--colorBlack);
+  max-width: 16rem;
   margin: 0;
   padding: 2rem;
   position: relative;
   z-index: 1;
 }
 
+.box > h2 {
+  color: var(--colorWhite);
+  font-weight: 400;
+}
+
 .welcome-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0) 40%);
-  padding: 0 0 5rem;
 }
 
 .welcome-text {
   display: grid;
   grid-template-columns: 70% 30%;
-  gap: 5rem;
-  padding-top: 4rem;
+  gap: 1rem;
+  padding: 4rem;
   max-width: 89rem;
   margin: 0 auto;
   font-size: 1.5rem;
 }
 
+hr {
+  border: 0.1px solid var(--colorGrey);
+  max-width: 89rem;
+  margin: 2rem;
+  align-self: center;
+  width: 100%;
+}
+
 .section-heading {
-  border-top: 0.1px solid var(--colorGrey);
   padding-top: 4rem;
   max-width: 89rem;
   margin: 0 auto;
@@ -136,28 +147,80 @@ CONTAINERS
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   max-width: 91rem;
   justify-items: center;
   margin: 0 auto;
   padding-top: 2rem;
 }
 
-.card-container--small {
-  display: flex;
+.card-container-small {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
   max-width: 89rem;
-  justify-content: space-between;
   margin: 0 auto;
   padding-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .card-container-small {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-text {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-container-small {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-text {
+    padding: 4rem 0;
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 1rem;
+    justify-content: center;
+  }
 }
 
 /* ========================================================
 BUTTONS
 ======================================================== */
+
+button {
+  color: var(--colorWhite);
+  background: var(--colorBlack);
+  padding: 10px 20px;
+  border: var(--colorWhite) 2px solid;
+  border-radius: 0;
+  font-size: medium;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--colorBlack);
+  background: var(--colorWhite);
+  border: var(--colorBlack) 2px solid;
+}
+
 .exhibitions-events-btn {
   color: var(--colorWhite);
   position: relative;
@@ -182,4 +245,11 @@ BUTTONS
 
 .exhibitions-events-btn:hover::before {
   transform: scaleX(1);
+}
+
+@media (max-width: 1400px) {
+  .welcome-section,
+  .home-section {
+    padding-inline: 2rem;
+  }
 }

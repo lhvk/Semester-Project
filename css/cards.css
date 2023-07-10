@@ -2,100 +2,96 @@
 LARGE CARD
 ======================================================== */
 
-.card--large {
+.card-large {
   background-color: var(--colorDark);
   display: flex;
   flex-direction: row-reverse;
   transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  height: 460px;
-  width: 692px;
+  max-width: 768px;
+  width: 100%;
 }
 
-.card__img--large {
-  width: 346px;
-}
-
-.card__img--large img {
+.card-img-large img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.card__content--large {
+.card-content-large {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 346px;
+  background-color: var(--colorDark);
+  max-width: 300px;
+  width: 100%;
 }
 
-.card--large:hover {
-  padding: 1rem;
+.card-large:hover img {
+  transform: scale(0.9);
 }
 
-.card__header--large {
+.card-header-large {
   margin: 2rem;
 }
 
-.card__footer--large {
+.card-footer-large {
   display: flex;
   justify-content: space-between;
   margin: 2rem;
   align-items: baseline;
 }
 
-.card__footer--large p {
-  color: purple;
+.card-footer-large p {
+  color: var(--colorOrange);
   font-size: 0.8rem;
-}
-
-.card__footer--large button {
-  border-style: none;
-  background-color: purple;
-  border-radius: 50%;
-  color: var(--colorWhite);
-  height: 5rem;
-  width: 5rem;
 }
 
 /* ========================================================
 SMALL CARD
 ======================================================== */
 
-.card--small {
-  width: 315px;
+.card-small {
   background-color: var(--colorDark);
   transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
-.card__img--small img {
+.card-img-small img {
   width: 100%;
-  height: 178px;
-  object-fit: fill;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.card--small:hover {
-  padding: 1rem;
+.card-small:hover img {
+  transform: scale(0.9);
 }
 
-.card__header--small {
-  margin: 2rem 2rem 0;
+.card-header-small {
+  margin-block: 10px;
+  padding-inline: 20px;
 }
 
-.card__content--small p {
+.card-header-small h3 {
+  color: var(--colorOrange);
+}
+
+.card-content-small p {
   color: var(--colorGrey);
-  margin: 2rem;
+  padding-inline: 20px;
+  padding-bottom: 10px;
 }
 
 /* ========================================================
 MEDIA QUERIES
 ======================================================== */
 
-@media screen and (max-width: 800px) {
-  .card--large {
-    width: 26rem;
+@media (max-width: 768px) {
+  .card-large {
     flex-direction: column;
   }
-  .card__content--large {
-    width: 86%;
+
+  .card-img-large img {
+    width: 100%;
   }
 }

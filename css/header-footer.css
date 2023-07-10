@@ -1,0 +1,248 @@
+/* ========================================================
+HEADER
+======================================================== */
+
+header {
+  display: flex;
+  background: var(--colorBlack);
+  height: 10rem;
+  font-weight: 500;
+  justify-content: center;
+  list-style: none;
+  padding: 0 100px;
+  text-transform: uppercase;
+}
+
+.header-inner a {
+  z-index: 3;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorWhite);
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: var(--colorWhite);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease-in-out; /* Transition effect */
+}
+
+.menu a:hover {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--colorOrange);
+}
+
+.active {
+  color: var(--colorOrange) !important;
+}
+
+/* ========================================================
+HAMBURGER MENU
+======================================================== */
+
+input {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+
+  .menu-icon {
+    color: var(--colorWhite);
+    display: block;
+    z-index: 3;
+  }
+
+  .menu a:hover {
+    border-bottom: none;
+  }
+
+  .menu a {
+    transition: none;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    background-color: var(--colorBlack);
+    width: 100%;
+    z-index: 9999999;
+    padding: 20px 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .menu li:not(:last-child) {
+    border-bottom: 1px solid #c3c3c3;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menu li {
+    text-align: center;
+    width: 90%;
+  }
+
+  #menu-toggle:checked ~ .menu,
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+  }
+}
+/* ========================================================
+FOOTER
+======================================================== */
+
+footer {
+  width: 100%;
+}
+
+footer h3 {
+  color: var(--colorWhite);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+footer p {
+  color: #c3c3c3;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+footer a {
+  color: var(--colorOrange);
+}
+
+.foot-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 0px;
+  padding: 50px 0px;
+  align-items: start;
+}
+
+.museum-logo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+
+.museum-logo h3 {
+  padding-left: 20px;
+}
+
+.museum-logo img {
+  background-color: var(--colorWhite);
+  border-radius: 100%;
+  height: 135px;
+}
+
+.single-letter-style {
+  color: var(--colorOrange);
+}
+
+.social img {
+  height: 50px;
+  padding-right: 5px;
+  opacity: 0.8;
+}
+
+.social img:hover {
+  opacity: 1;
+}
+
+.individual-color {
+  color: var(--colorOrange);
+}
+
+.footer-copyright-text {
+  padding-bottom: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ========================================================
+RESPONSIVENESS
+======================================================== */
+
+@media (max-width: 768px) {
+  .foot-wrapper {
+    gap: 20px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin: 0px;
+    padding: 25px 0px;
+  }
+
+  .museum-logo {
+    align-items: center;
+  }
+
+  .museum-logo img {
+    height: 80px;
+  }
+
+  .donate {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .foot-wrapper > div {
+    padding: 20px;
+  }
+
+  .foot-wrapper {
+    margin: auto;
+    max-width: 900px;
+  }
+}
