@@ -6,7 +6,7 @@
 
 This was a school project and the objective was to create a website for a museum.
 
-* It was built with only HTML & CSS
+* It was built with only vanilla HTML & CSS
 
 ## Built with
 
@@ -35,5 +35,5 @@ Please do not making any pull requests to this folder
 
 ### Noroff School of Technology and Digital Media
 * Provided some stock footage
-### Unsplash 
+### Unsplash for the rest of the footage
 * [Unsplash](https://www.unsplash.com)
