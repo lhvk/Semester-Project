@@ -34,4 +34,6 @@ Please do not making any pull requests to this folder
 ## Acknowledgments
 
 ### Noroff School of Technology and Digital Media
-* Provided all the stock footage
+* Provided some stock footage
+### Unsplash 
+* [Unsplash](https://www.unsplash.com)
