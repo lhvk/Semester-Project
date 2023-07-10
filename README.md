@@ -1,6 +1,6 @@
 # Semester-Project
 
-![cms](https://user-assets/images.githubusercontent.com/77023253/192096928-96431171-6439-4340-a773-ac711e761901.jpg)
+![cms](assets/readme-image.png)
 
 ## Description
 
