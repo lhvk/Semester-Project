@@ -29,7 +29,7 @@ Please do not making any pull requests to this folder
 
 ## Contact
 
-[My LinkedIn page](https://www.linkedin.com/in/lars-halvor-vikse-kall%C3%A5k-66a9301b9/)
+[Please visit my personal repo for contact information](https://github.com/lhvk)
 
 ## Acknowledgments
 
