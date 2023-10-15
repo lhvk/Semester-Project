@@ -23,7 +23,7 @@ git clone https://github.com/lhvk/Semester-Project.git
 This project has no dependencies 
 
 ### Running
-Fire up live server at the index.html and the site is live on your localhost.
+Start Live server, or any other dev server, from the index.html file, and the website will be accessible on your local host.
 
 ## Contact
 
